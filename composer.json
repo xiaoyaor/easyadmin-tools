@@ -1,0 +1,22 @@
+{
+    "name": "xiaoyaor/easyadmin-tools",
+    "description": "适用于easyadmin的扩展工具类",
+    "keywords": ["easyadmin-tools", "thinkphp"],
+    "license": "Apache-2.0",
+    "type": "easyadmin-extend",
+    "authors": [
+        {
+            "name": "xiaoyaor",
+            "email": "747976016@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "topthink/framework": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "easyadmin\\": "src/"
+        }
+    }
+}
