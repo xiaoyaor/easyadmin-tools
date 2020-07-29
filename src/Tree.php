@@ -318,7 +318,7 @@ class Tree
                 $nstr = strtr($itemtpl, $value);
                 $value = array_merge($value, $bakvalue);
                 $childdata = $this->getTreeMenu($id, $itemtpl, $selectedids, $disabledids, $wraptag, $wrapattr, $deeplevel + 1);
-                $childlist = $childdata ? "<{$wraptag} {$wrapattr}>" . $childdata . "</{$wraptag}>" : "";
+                $childlist = $childdata ? "<{$wraptag} {$wrapattr} style=\"display: none;\">" . $childdata . "</{$wraptag}>" : "";
                 $childlist = strtr($childlist, array('@class' => $childdata ? 'last' : ''));
                 $value = array(
                     '@childlist' => $childlist,
